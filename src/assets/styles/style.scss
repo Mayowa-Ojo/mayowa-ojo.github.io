@@ -452,6 +452,12 @@ img {
       span:hover {
         background: grey;
       }
+      p {
+        text-align: center;
+        color: teal;
+        position: relative;
+        left: -3em;
+      }
     }
   }
   .home-link {

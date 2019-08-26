@@ -442,6 +442,12 @@ img {
 .section-contact .section-contact--container .contact-links span:hover {
   background: grey;
 }
+.section-contact .section-contact--container .contact-links p {
+  text-align: center;
+  color: teal;
+  position: relative;
+  left: -3em;
+}
 .section-contact .home-link {
   margin: 40px auto;
   width: 100px;
