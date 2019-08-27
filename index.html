@@ -7,13 +7,14 @@
   <title>Mayowa Ojo - Backend Developer</title>
   <link rel="stylesheet" href="./src/assets/styles/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
 </head>
 <body>
   <nav class="nav-bar">
     <div class="nav-bar--brand">
       <p><a href="#home"><i class="fas fa-house-damage"></i></a></p>
     </div>
-    <div class="nav-bar--links">
+    <div class="nav-bar--links" id="mobile-nav">
       <li>Work with me? <span>|</span></li>
       <li><a href="#about">About <span>|</span></a></li>
       <li><a href="#projects">Projects <span>|</span></a></li>
@@ -23,7 +24,7 @@
 
   <!-- Home -->
   <section class="section-hero" id="home">
-    <div class="container">
+    <div class="hero-container">
       <h1 class="heading">Hi, <span>I'm Mayowa Ojo</span></h1>
       <h3>I'm a <span class="text-rotate" data-period="2000" data-rotate='["Backend Web Developer", "Tech Enthusiast", "Technical Writer", "Life Long Learner"]'></span></h3>
       <a href="#projects"><button>View my work <i class="fas fa-arrow-alt-circle-right"></i></button></a>
@@ -76,6 +77,7 @@
 
     <div class="section-projects--container">
       <div class="project project-1">
+        <span class="tag is-warning">Tag Label</span>
         <img src="./src/assets/images/project-1.png" alt="project-1">
         <div class="project-links">
           <a href="https://github.com/Mayowa-Ojo/The-CookBook" target="_blank"><button><i class="fab fa-github"></i>View Repository</button></a>
@@ -114,7 +116,10 @@
         <span><a href="https://twitter.com/_Kiimosabe" target="_blank"><img src="./src/assets/icons/twitter.svg" alt="Titter icon"></a></span>
       </div>
     </div>
-    <div class="home-link"><a href="#home"><i class="fas fa-arrow-alt-circle-up fa-4x"></i></a></div>
+    <div class="home-link">
+      <a href="#home"><i class="fas fa-arrow-alt-circle-up fa-4x"></i></a>
+    </div>
+
   </section>
 
   <script type="text/javascript" src="./src/assets/js/index.js"></script>

@@ -1,0 +1,148 @@
+/* media queries */
+@media screen and (max-width: 700px) {
+  /* Navigation */
+  .nav-bar {
+    grid-template-columns: 1fr 3fr;
+    .nav-bar--brand {
+      padding-left: 20px;
+    }
+    .nav-bar--links {
+      padding-right: 20px;
+      font-size: 0.8rem;
+    }
+  }
+
+  /* Home */
+  .section-hero {
+    .hero-container {
+      width: 100%;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.2rem;
+    }
+    button {
+      width: 170px;
+      height: 40px;
+      font-size: 1rem;
+    }
+  }
+
+  /* About */
+  .section-about{
+    width: 100%;
+    min-height: 1000px;
+    .section-about--heading {
+      font-size: 2rem;
+    }
+    .section-about--underline {
+      width: 100px;
+    }
+    .section-about--profile {
+      grid-template-columns: 1fr;
+      .profile-left {
+        justify-content: space-around;
+        .profile-avatar {
+          height: 180px;
+          width: 180px;
+          left: 30px;
+        }
+        .profile-description {
+          width: 50%;
+          height: 360px;
+        }
+      }
+      .profile-right {
+        left: 4em;
+        .skill-list {
+          // width: 80%;
+          ul li span:nth-child(2) {
+            width: 350px;
+            p {
+              font-size: 0.8rem;
+            }
+          }
+          ul .sub-list {
+            span:nth-child(2) {
+              width: 320px;
+              p {
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* Projects */
+  .section-projects {
+    min-height: 900px;
+    .section-projects--heading {
+      font-size: 2rem;
+    }
+    .section-projects--underline {
+      width: 100px;
+    }
+    .section-projects--container {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      width: 60%;
+    }
+    .project {
+      .project-links {
+        a:first-child button {
+          left: 10em !important;
+          font-size: 0.6em;
+          width: 100px;
+          height: 30px;
+        }
+        a:nth-child(2) button {
+          left: 10em !important;
+          font-size: 0.6em;
+          width: 100px;
+          height: 30px;
+        }
+      }
+      .project-links:active a:first-child button {
+        transform: translateY(1em);
+      }
+      .project-links:active a:nth-child(2) button {
+        transform: translateY(-0.5em) !important;
+      }
+    }
+  }
+
+  /* contacts */
+  .section-contact {
+    .section-contact--heading {
+      font-size: 2rem;
+    }
+    .section-contact--underline {
+      width: 100px;
+    }
+    .section-contact--container {
+      width: 90%;
+      h4 {
+        font-size: 1rem;
+      }
+      .contact-links {
+        padding-left:
+        50px;
+        span {
+          width: 40px;
+          height: 40px;
+          img {
+            left: 10px;
+            top: 10px;
+          }
+        }
+      }
+    }
+    .home-link {
+      font-size: 0.8rem;
+    }
+  }
+}

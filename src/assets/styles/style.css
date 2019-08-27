@@ -83,7 +83,7 @@ img {
   background: rgba(0, 0, 0, 0.7);
 }
 
-.section-hero .container {
+.section-hero .hero-container {
   margin: 0 auto;
   width: 34%;
   position: relative;
@@ -169,7 +169,7 @@ img {
 .section-about {
   display: flex;
   flex-direction: column;
-  height: 700px;
+  min-height: 700px;
   width: 80%;
   margin: 0 auto;
 }
@@ -308,7 +308,7 @@ img {
 .section-projects .section-projects--container {
   width: 70%;
   margin: 0 auto;
-  min-height: 600px;
+  min-height: 80% px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -463,6 +463,142 @@ img {
 }
 .section-contact .home-link .fas:hover {
   transform: translateY(-10px);
+}
+
+/* import mobile-view styles */
+/* media queries */
+@media screen and (max-width: 700px) {
+  /* Navigation */
+  .nav-bar {
+    grid-template-columns: 1fr 3fr;
+  }
+  .nav-bar .nav-bar--brand {
+    padding-left: 20px;
+  }
+  .nav-bar .nav-bar--links {
+    padding-right: 20px;
+    font-size: 0.8rem;
+  }
+
+  /* Home */
+  .section-hero .hero-container {
+    width: 100%;
+  }
+  .section-hero h1 {
+    font-size: 2rem;
+  }
+  .section-hero h3 {
+    font-size: 1.2rem;
+  }
+  .section-hero button {
+    width: 170px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  /* About */
+  .section-about {
+    width: 100%;
+    min-height: 1000px;
+  }
+  .section-about .section-about--heading {
+    font-size: 2rem;
+  }
+  .section-about .section-about--underline {
+    width: 100px;
+  }
+  .section-about .section-about--profile {
+    grid-template-columns: 1fr;
+  }
+  .section-about .section-about--profile .profile-left {
+    justify-content: space-around;
+  }
+  .section-about .section-about--profile .profile-left .profile-avatar {
+    height: 180px;
+    width: 180px;
+    left: 30px;
+  }
+  .section-about .section-about--profile .profile-left .profile-description {
+    width: 50%;
+    height: 360px;
+  }
+  .section-about .section-about--profile .profile-right {
+    left: 4em;
+  }
+  .section-about .section-about--profile .profile-right .skill-list ul li span:nth-child(2) {
+    width: 350px;
+  }
+  .section-about .section-about--profile .profile-right .skill-list ul li span:nth-child(2) p {
+    font-size: 0.8rem;
+  }
+  .section-about .section-about--profile .profile-right .skill-list ul .sub-list span:nth-child(2) {
+    width: 320px;
+  }
+  .section-about .section-about--profile .profile-right .skill-list ul .sub-list span:nth-child(2) p {
+    font-size: 0.8rem;
+  }
+
+  /* Projects */
+  .section-projects {
+    min-height: 900px;
+  }
+  .section-projects .section-projects--heading {
+    font-size: 2rem;
+  }
+  .section-projects .section-projects--underline {
+    width: 100px;
+  }
+  .section-projects .section-projects--container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    width: 60%;
+  }
+  .section-projects .project .project-links a:first-child button {
+    left: 10em !important;
+    font-size: 0.6em;
+    width: 100px;
+    height: 30px;
+  }
+  .section-projects .project .project-links a:nth-child(2) button {
+    left: 10em !important;
+    font-size: 0.6em;
+    width: 100px;
+    height: 30px;
+  }
+  .section-projects .project .project-links:active a:first-child button {
+    transform: translateY(1em);
+  }
+  .section-projects .project .project-links:active a:nth-child(2) button {
+    transform: translateY(-0.5em) !important;
+  }
+
+  /* contacts */
+  .section-contact .section-contact--heading {
+    font-size: 2rem;
+  }
+  .section-contact .section-contact--underline {
+    width: 100px;
+  }
+  .section-contact .section-contact--container {
+    width: 90%;
+  }
+  .section-contact .section-contact--container h4 {
+    font-size: 1rem;
+  }
+  .section-contact .section-contact--container .contact-links {
+    padding-left: 50px;
+  }
+  .section-contact .section-contact--container .contact-links span {
+    width: 40px;
+    height: 40px;
+  }
+  .section-contact .section-contact--container .contact-links span img {
+    left: 10px;
+    top: 10px;
+  }
+  .section-contact .home-link {
+    font-size: 0.8rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

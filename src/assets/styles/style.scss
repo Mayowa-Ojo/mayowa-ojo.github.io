@@ -92,7 +92,7 @@ img {
 }
 
 .section-hero {
-  .container {
+  .hero-container {
     margin: 0 auto;
     width: 34%;
     position: relative;
@@ -179,7 +179,7 @@ img {
 .section-about {
   display: flex;
   flex-direction: column;
-  height: 700px;
+  min-height: 700px;
   width: 80%;
   margin: 0 auto;
   .section-about--heading {
@@ -320,7 +320,7 @@ img {
   .section-projects--container {
     width: 70%;
     margin: 0 auto;
-    min-height: 600px;
+    min-height: 80%px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -477,3 +477,6 @@ img {
     }
   }
 }
+
+/* import mobile-view styles */
+@import 'mobile-view';
