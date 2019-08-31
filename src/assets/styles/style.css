@@ -497,7 +497,7 @@ img {
     width: 170px;
     height: 40px;
     font-size: 1rem;
-    left: 25%;
+    left: 28%;
   }
 
   /* About */
@@ -523,11 +523,11 @@ img {
   .section-about .section-about--profile .profile-left .profile-avatar {
     height: 180px;
     width: 180px;
-    left: 120px;
+    left: 110px;
     top: 35px;
   }
   .section-about .section-about--profile .profile-left .profile-description {
-    border: 1px solid grey;
+    border: none;
     width: 90%;
     height: 300px;
     left: 25px;
@@ -619,7 +619,7 @@ img {
     font-size: 1rem;
   }
   .section-contact .section-contact--container .contact-links {
-    padding-left: 30px;
+    padding-left: 42px;
   }
   .section-contact .section-contact--container .contact-links span {
     width: 40px;
