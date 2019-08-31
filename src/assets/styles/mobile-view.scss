@@ -86,7 +86,7 @@
             }
           }
           ul li span:nth-child(2) {
-            width: 350px;
+            max-width: 320px;
             height: 23px;
             top: 5.5px;
             p {
@@ -95,7 +95,7 @@
           }
           ul .sub-list {
             span:nth-child(2) {
-              width: 320px;
+              max-width: 290px;
               p {
                 font-size: 0.8rem;
               }

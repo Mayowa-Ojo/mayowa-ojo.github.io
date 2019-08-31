@@ -557,7 +557,7 @@ img {
     left: 7px;
   }
   .section-about .section-about--profile .profile-right .skill-list ul li span:nth-child(2) {
-    width: 350px;
+    max-width: 320px;
     height: 23px;
     top: 5.5px;
   }
@@ -565,7 +565,7 @@ img {
     font-size: 0.8rem;
   }
   .section-about .section-about--profile .profile-right .skill-list ul .sub-list span:nth-child(2) {
-    width: 320px;
+    max-width: 290px;
   }
   .section-about .section-about--profile .profile-right .skill-list ul .sub-list span:nth-child(2) p {
     font-size: 0.8rem;
