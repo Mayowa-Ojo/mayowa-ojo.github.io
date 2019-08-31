@@ -497,6 +497,7 @@ img {
     width: 170px;
     height: 40px;
     font-size: 1rem;
+    left: 25%;
   }
 
   /* About */
@@ -623,6 +624,7 @@ img {
   .section-contact .section-contact--container .contact-links span {
     width: 40px;
     height: 40px;
+    margin: 10px;
   }
   .section-contact .section-contact--container .contact-links span img {
     left: 10px;
