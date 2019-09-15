@@ -44,7 +44,9 @@ class RotateText {
 }
 
 window.onload = () => {
-  window.location.href = 'https://mayowa-ojo.github.io';
+  if(window.location.href == 'https://mayowa-ojo.github.io/portfolio') {
+    window.location.href = 'https://mayowa-ojo.github.io';
+  }
   const elements = document.querySelectorAll('.text-rotate');
 
   for(let i = 0; i < elements.length; i++) {
