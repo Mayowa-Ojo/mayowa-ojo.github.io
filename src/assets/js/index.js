@@ -44,7 +44,7 @@ class RotateText {
 }
 
 window.onload = () => {
-  console.log('starting...')
+  window.location.href = 'https://mayowa-ojo.github.io';
   const elements = document.querySelectorAll('.text-rotate');
 
   for(let i = 0; i < elements.length; i++) {
