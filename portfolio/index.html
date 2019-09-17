@@ -6,13 +6,69 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Error Page</title>
   <style media="screen">
-    .heading {
-      text-align: center;
-      color: teal;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
+    a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 0.9rem;
+    }
+    .container {
+      width: 35%;
+      height: 50vh;
+      border: 1px solid #dfe6e9;
+      margin: 1em auto;
+    }
+    .container img {
+      height: auto;
+      width: 100%;
+    }
+    .header {
+      width: 45%;
+      height: 12vh;
+      margin: 10em auto 0 auto;
+    }
+    p {
+      text-align: center;
+      font-size: 2rem;
+      color: steelblue;
+    }
+    p > span {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      position: relative;
+      top: 0.25em;
+    }
+    button {
+      width: 12em;
+      height: 3.5em;
+      background: none;
+      border: 2px solid #fd79a8;
+      position: relative;
+      left: 21em;
+      margin-top: 1em;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ff7675;
+      border: 2px solid white;
+      color: white
+    }
+
   </style>
 </head>
 <body>
-  <h1 class="heading">Page Not Found</h1>
+  <div class="header">
+    <p>We've moved! Apologies for the inconvinience <span><img src="../src/assets/icons/emoji.svg" alt="face emoji"></span></p>
+    <button type="button" name="button"><a href="/">Go To Home Page</a></button>
+  </div>
+  <div class="container">
+    <img src="../src/assets/images/error.png" alt="error image">
+  </div>
 </body>
 </html>
