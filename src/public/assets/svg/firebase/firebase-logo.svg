@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="256px" height="351px" viewBox="0 0 256 351" enable-background="new 0 0 256 351" xml:space="preserve">
+<filter  width="200%" height="200%" x="-50%" y="-50%" id="filter-4" filterUnits="objectBoundingBox">
+	<feGaussianBlur  stdDeviation="3.5" result="shadowBlurInner1" in="SourceAlpha"></feGaussianBlur>
+	<feOffset  result="shadowOffsetInner1" dx="1" dy="-9" in="shadowBlurInner1"></feOffset>
+	<feComposite  result="shadowInnerInner1" k2="-1" in2="SourceAlpha" operator="arithmetic" k3="1" in="shadowOffsetInner1">
+		</feComposite>
+	<feColorMatrix  type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.09 0" in="shadowInnerInner1"></feColorMatrix>
+</filter>
+<filter  width="200%" height="200%" x="-50%" y="-50%" id="filter-2" filterUnits="objectBoundingBox">
+	<feGaussianBlur  stdDeviation="17.5" result="shadowBlurInner1" in="SourceAlpha"></feGaussianBlur>
+	<feOffset  result="shadowOffsetInner1" dx="0" dy="0" in="shadowBlurInner1"></feOffset>
+	<feComposite  result="shadowInnerInner1" k2="-1" in2="SourceAlpha" operator="arithmetic" k3="1" in="shadowOffsetInner1">
+		</feComposite>
+	<feColorMatrix  type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0" in="shadowInnerInner1"></feColorMatrix>
+</filter>
+<g>
+	<path fill="#FFC24A" d="M47.349,243.066l1.335-1.871l63.176-119.873l0.133-1.269L84.145,67.742
+		c-2.333-4.382-8.902-3.274-9.667,1.631L47.349,243.066z"/>
+	<g>
+		<g>
+			<path id="path-1" fill="#FFA712" d="M48.137,241.641l1.011-1.97l62.514-118.618L83.882,68.529
+				c-2.309-4.337-8.171-3.231-8.929,1.623L48.137,241.641z"/>
+		</g>
+		<g filter="url(#filter-2)">
+			<path id="path-1_2_" d="M48.137,241.641l1.011-1.97l62.514-118.618L83.882,68.529c-2.309-4.337-8.171-3.231-8.929,1.623
+				L48.137,241.641z"/>
+		</g>
+	</g>
+	<path fill="#F4BD62" d="M132.296,159.622l20.735-21.237L132.29,98.789c-1.97-3.748-7.467-3.759-9.415,0l-11.082,21.134v1.8
+		L132.296,159.622z"/>
+	<g>
+		<g>
+			<path id="path-3" fill="#FFA50E" d="M131.926,158.736l20.159-20.646l-20.159-38.386c-1.914-3.644-6.564-4.026-8.458-0.372
+				l-11.141,21.462l-0.333,1.097L131.926,158.736z"/>
+		</g>
+		<g filter="url(#filter-4)">
+			<path id="path-3_2_" d="M131.926,158.736l20.159-20.646l-20.159-38.386c-1.914-3.644-6.564-4.026-8.458-0.372l-11.141,21.462
+				l-0.333,1.097L131.926,158.736z"/>
+		</g>
+	</g>
+	<polygon fill="#F6820C" points="47.349,243.066 47.954,242.458 50.153,241.563 130.994,161.024 132.017,158.236 111.852,119.808 	
+		"/>
+	<path fill="#FDE068" d="M134.886,283.684l73.162-40.803l-20.894-128.67c-0.653-4.026-5.592-5.618-8.473-2.73L47.349,243.066
+		l72.742,40.615C124.688,286.247,130.286,286.248,134.886,283.684"/>
+	<path fill="#FCCA3F" d="M207.392,242.539l-20.733-127.694c-0.649-3.995-4.756-5.648-7.615-2.783L48.16,242.816l71.943,40.213
+		c4.562,2.546,10.119,2.547,14.682,0.003L207.392,242.539z"/>
+	<path fill="#EEAB37" d="M134.886,282.482c-4.6,2.563-10.198,2.563-14.794-0.005l-72.157-40.03l-0.586,0.619l72.743,40.615
+		c4.597,2.565,10.195,2.566,14.794,0.002l73.162-40.803l-0.18-1.102L134.886,282.482z"/>
+</g>
+</svg>

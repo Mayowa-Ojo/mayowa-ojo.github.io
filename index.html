@@ -1,126 +1,382 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mayowa Ojo - Backend Developer</title>
-  <link rel="stylesheet" href="./src/assets/styles/style.css">
+  <link rel="stylesheet" href="./src-new/public/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./src-new/public/assets/favicon/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src-new/public/assets/favicon/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./src-new/public/assets/favicon/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./src-new/public/assets/favicon/favicon_io/site.webmanifest">
+  <!-- script -->
+  <script type="text/javascript" src="./src-new/public/js/index.js" defer></script>
 </head>
 <body>
-  <nav class="nav-bar">
-    <div class="nav-bar--brand">
-      <p><a href="#home"><i class="fas fa-house-damage"></i></a></p>
+  <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <span class="icon"><i class="fas fa-home"></i></span>
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
-    <div class="nav-bar--links" id="mobile-nav">
-      <li><a href="https://drive.google.com/open?id=1i6g_cLGj7mWv-MnwyhrNHuRiyl6yLdt4">Résumé</a> <span>|</span></li>
-      <li><a href="#about">About <span>|</span></a></li>
-      <li><a href="#projects">Projects <span>|</span></a></li>
-      <li><a href="#contact">Contact</a></li>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Home
+        </a>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Resume
+          </a>
+
+          <div class="navbar-dropdown is-boxed">
+            <a class="navbar-item">
+              View
+            </a>
+            <a class="navbar-item">
+              Download
+            </a>
+          </div>
+        </div>
+        <a href="#about" class="navbar-item">
+          About
+        </a>
+        <a href="#projects" class="navbar-item">
+          Projects
+        </a>
+        <a href="#contact" class="navbar-item">
+          Contact
+        </a>
+      </div>
     </div>
   </nav>
 
-  <!-- Home -->
-  <section class="section-hero" id="home">
-    <div class="hero-container">
-      <h1 class="heading">Hi, <span>I'm Mayowa Ojo</span></h1>
-      <h3>I'm a <span class="text-rotate" data-period="2000" data-rotate='["Backend Web Developer", "Tech Enthusiast", "Technical Writer", "Life Long Learner"]'></span></h3>
-      <a href="#projects"><button>View my work <i class="fas fa-arrow-alt-circle-right"></i></button></a>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section class="section-about" id="about">
-    <h1 class="section-about--heading">About Me</h1>
-    <div class="section-about--underline"></div>
-
-    <div class="section-about--profile">
-      <div class="profile-left">
-        <span class="profile-avatar">
-          <img src="./src/assets/images/IMG_20170630_135111_296.jpg" alt="avatar">
-        </span>
-        <div class="profile-description">
-          <h3>Who am I?</h3>
-          <p>I'm a backend developer living in Lagos, Nigeria. A vibrant and goal-driven
-             individual who's fascinated by the backend technologies that power web applications.
-             I love to build effective solutions for human problems by leveraging the powerful
-             languages and tools in software engineering. Oh, and I love coffee too 😉.
-          </p>
-        </div>
-      </div>
-      <div class="profile-right">
-        <h3>skills</h3>
-        <div class="skill-list">
-          <ul>
-            <li><span><span><p>1</p></span></span> <span><p>Languages</p></span></li>
-              <li class="sub-list"><span><span><p>*</p></span></span> <span><p>HTML, CSS, JavaScript</p></span></li>
-              <li class="sub-list"><span><span><p>*</p></span></span> <span><p>Node.js</p></span></li>
-              <li class="sub-list"><span><span><p>*</p></span></span> <span><p>Php</p></span></li>
-            <li><span><span><p>2</p></span></span> <span><p>Frameworks/Libraries</p></span></li>
-              <li class="sub-list"><span><span><p>*</p></span></span> <span><p>Express.js, React, Bootstrap</p></span></li>
-            <li><span><span><p>3</p></span></span> <span><p>Database</p></span></li>
-              <li class="sub-list"><span><span><p>*</p></span></span> <span><p>MongoDB, PostgreSQL</p></span></li>
-            <li><span><span><p>4</p></span></span> <span><p>Tools</p></span></li>
-            <li class="sub-list"><span><span><p>*</p></span></span> <span><p>Git, Github, Postman, Trello, npm</p></span></li>
-          </ul>
+  <!-- Section - Hero -->
+  <section id="hero" class="hero is-success is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-1">Hi, <span>I'm Mayowa Ojo</span></h1>
+        <h2 class="subtitle is-3">I'm a <span class="text-rotate" data-period="2000" data-rotate='["Backend Web Developer", "Tech Enthusiast", "Technical Writer", "Life Long Learner"]'></span></h3>
+        <div class="btn-container">
+          <a href="#projects" class="button is-outlined is-warning is-large">
+            View my work <i class="fas fa-arrow-alt-circle-right"></i>
+          </a href="#projects">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section class="section-projects" id="projects">
-    <h1 class="section-projects--heading">Projects</h1>
-    <div class="section-projects--underline"></div>
-
-    <div class="section-projects--container">
-      <div class="project project-1 image is-5by4">
-        <img src="./src/assets/images/project-1.png" alt="project-1">
-        <div class="project-links">
-          <a href="https://github.com/Mayowa-Ojo/The-CookBook" target="_blank"><button><i class="fab fa-github"></i>View Repository</button></a>
-          <a href="https://thechef.netlify.com/" target="_blank"><button><i class="fas fa-link"></i>Live Preview</button></a>
+  <!-- Section - About -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h1 class="title is-1">About</h1>
+      <div class="columns">
+        <div class="column is-4">
+          <figure class="image is-square">
+            <img src="src-new/public/assets/images/IMG_20170630_135111_296.jpg">
+          </figure>
         </div>
-      </div>
-      <div class="project project-2 image is-5by4">
-        <img src="./src/assets/images/project-3.png" alt="project-2">
-        <div class="project-links">
-          <a href="#"><button><i class="fab fa-github"></i>View Repository</button></a>
-          <a href="#"><button><i class="fas fa-link"></i>Live Preview</button></a>
-        </div>
-      </div>
-      <div class="project project-3 image is-5by4">
-        <img src="./src/assets/images/project-4.png" alt="project-2">
-        <div class="project-links">
-          <a href="https://github.com/Mayowa-Ojo/Morning-Tea" target="_blank"><button><i class="fab fa-github"></i>View Repository</button></a>
-          <a href="#"><button><i class="fas fa-link"></i>Live Preview</button></a>
+        <div class="column is-5">
+          <div class="box">
+            <h2 class="subtitle is-3">Who am I?</h2>
+            <p class="content is-medium">I'm a backend developer living in Lagos, Nigeria. A vibrant and goal-driven
+               individual who's fascinated by the backend technologies that power web applications.
+               I love to build effective solutions for human problems by leveraging the powerful
+               languages and tools in software engineering. Oh, and I love coffee too 😉.
+             </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section class="section-contact" id="contact">
-    <h1 class="section-contact--heading">Contact</h1>
-    <div class="section-contact--underline"></div>
-
-    <div class="section-contact--container">
-      <h4>I'm available for remote and on-site opportunities. Let's work together <i class="fas fa-handshake"></i></h4>
-      <div class="contact-links">
-        <p>Find me on: </p>
-        <span><a href="https://www.linkedin.com/in/mayowa-ojo-39394b137/" target="_blank"><img src="./src/assets/icons/linkedin1.svg" alt="Linkedin icon"></a></span>
-        <span><a href="https://medium.com/@mayowaojo.e" target="_blank"><img src="./src/assets/icons/medium.svg" alt="Medium icon"></a></span>
-        <span><a href="https://github.com/Mayowa-Ojo" target="_blank"><img src="./src/assets/icons/github.svg" alt="Github icon"></a></span>
-        <span><a href="https://twitter.com/_Kiimosabe" target="_blank"><img src="./src/assets/icons/twitter.svg" alt="Titter icon"></a></span>
+  <!-- Section Stack -->
+  <section class="section stack">
+    <div class="container">
+      <h1 class="title is-1">Tech Stack</h1>
+      <!-- Languages -->
+      <h2 class="subtitle is-4">Languages</h2>
+      <div class="columns">
+        <div class="column is-2 is-2">
+          <div class="notification">
+            <figure class="image is-64x64">
+              <img src="src-new/public/assets/svg/javascript/javascript-logo.svg" alt="">
+            </figure>
+            <p>JavaScript</p>
+          </div>
+        </div>
+        <div class="column is-2">
+          <div class="notification">
+            <figure class="image is-64x64">
+              <img src="src-new/public/assets/svg/typescript/typescript-logo.svg" alt="">
+            </figure>
+            <p>TypeScript</p>
+          </div>
+        </div>
+        <div class="column is-2">
+          <div class="notification">
+            <figure class="image is-64x64">
+              <img src="src-new/public/assets/svg/php/php-logo.svg" alt="">
+            </figure>
+            <p>PHP</p>
+          </div>
+        </div>
+        <div class="column is-2">
+          <div class="notification">
+            <figure class="image is-64x64">
+              <img src="src-new/public/assets/svg/node/node-logo.svg" alt="">
+            </figure>
+            <p>Node.js</p>
+          </div>
+        </div>
+      </div>
+      <!-- Frameworks -->
+      <h2 class="subtitle is-4">Frameworks</h2>
+      <div class="columns">
+        <div class="column is-2">
+          <div class="notification">
+            <figure class="image is-64x64">
+              <img src="src-new/public/assets/svg/react/react-logo.svg" alt="">
+            </figure>
+            <p>React</p>
+          </div>
+        </div>
+        <div class="column is-2">
+          <div class="notification">
+            <figure class="image is-64x64">
+              <img src="src-new/public/assets/svg/express/express-logo.svg" alt="">
+            </figure>
+            <p>Express</p>
+          </div>
+        </div>
+        <div class="column is-2">
+          <div class="notification">
+            <figure class="image is-64x64">
+              <img src="src-new/public/assets/svg/laravel/laravel-logo.svg" alt="">
+            </figure>
+            <p>Laravel</p>
+          </div>
+        </div>
+        <div class="column is-2">
+          <div class="notification">
+            <figure class="image is-64x64">
+              <img src="src-new/public/assets/svg/jquery/jquery-logo.svg" alt="">
+            </figure>
+            <p>jQuery</p>
+          </div>
+        </div>
+      </div>
+      <!-- Database -->
+      <h2 class="subtitle is-4">Datbase</h2>
+      <div class="columns">
+        <div class="column is-2">
+          <div class="notification">
+            <figure class="image is-64x64">
+              <img src="src-new/public/assets/svg/mongodb/mongodb-logo.svg" alt="">
+            </figure>
+            <p>MongoDB</p>
+          </div>
+        </div>
+        <div class="column is-2">
+          <div class="notification">
+            <figure class="image is-64x64">
+              <img src="src-new/public/assets/svg/postgres/postgres-logo.svg" alt="">
+            </figure>
+            <p>Postgres</p>
+          </div>
+        </div>
+        <div class="column is-2">
+          <div class="notification">
+            <figure class="image is-64x64">
+              <img src="src-new/public/assets/svg/firebase/firebase-logo.svg" alt="">
+            </figure>
+            <p>Firebase</p>
+          </div>
+        </div>
+      </div>
+      <!-- UI Libraries -->
+      <h2 class="subtitle is-4">UI Libraries</h2>
+      <div class="columns">
+        <div class="column is-2">
+          <div class="notification">
+            <figure class="image is-64x64">
+              <img src="src-new/public/assets/svg/bootstrap/bootstrap-logo.svg" alt="">
+            </figure>
+            <p>Bootstrap</p>
+          </div>
+        </div>
+        <div class="column is-2">
+          <div class="notification">
+            <figure class="image is-64x64">
+              <img src="src-new/public/assets/svg/semantic-ui/semantic-ui-logo.svg" alt="">
+            </figure>
+            <p>Semantic UI</p>
+          </div>
+        </div>
+        <div class="column is-2">
+          <div class="notification">
+            <figure class="image is-64x64">
+              <img src="src-new/public/assets/svg/materialize/materialize-logo.svg" alt="">
+            </figure>
+            <p>Materialize</p>
+          </div>
+        </div>
+        <div class="column is-2">
+          <div class="notification">
+            <figure class="image is-64x64">
+              <img src="src-new/public/assets/svg/bulma/bulma-logo.svg" alt="">
+            </figure>
+            <p>Bulma</p>
+          </div>
+        </div>
+      </div>
+      <!-- Architectures -->
+      <h2 class="subtitle is-4">Architectures</h2>
+      <div class="columns">
+        <div class="column is-2">
+          <div class="notification">
+            <figure class="image is-64x64">
+              <img src="src-new/public/assets/svg/mvc-logo.png" alt="">
+            </figure>
+            <p>MVC</p>
+          </div>
+        </div>
+        <div class="column is-2">
+          <div class="notification">
+            <figure class="image is-64x64">
+              <img src="src-new/public/assets/svg/rest-api.svg" alt="">
+            </figure>
+            <p>REST</p>
+          </div>
+        </div>
+        <div class="column is-2">
+          <div class="notification">
+            <figure class="image is-64x64">
+              <img src="src-new/public/assets/svg/graphql/graphql-logo.svg" alt="">
+            </figure>
+            <p>GraphQl</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="home-link">
-      <a href="#home"><i class="fas fa-arrow-alt-circle-up fa-4x"></i></a>
-    </div>
+  </section>
+  <!-- Section - Projects -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h1 class="title is-1">Projects</h1>
+      <div class="columns">
 
+        <div class="column is-3">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="src-new/public/assets/images/project-1.png" alt="">
+              </figure>
+              <div class="button-container">
+                <a href="https://github.com/Mayowa-Ojo/The-CookBook" target="_blank" rel="noreferrer noopener" class="button is-outlined is-danger">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  View Repository
+                </a>
+                <a href="http://thechef.netlify.com" target="_blank" rel="noreferrer noopener" class="button is-outlined is-danger">
+                  <span class="icon"><i class="fas fa-link"></i></span>
+                  Live Preview
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-3">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="src-new/public/assets/images/project-5.png" alt="">
+              </figure>
+              <div class="button-container">
+                <a href="https://github.com/Mayowa-Ojo/chill-spot" target="_blank" rel="noreferrer noopener" class="button is-outlined is-danger">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  View Repository
+                </a>
+                <a href="#" class="button is-outlined is-danger">
+                  <span class="icon"><i class="fas fa-link"></i></span>
+                  Live Preview
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-3">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="src-new/public/assets/images/project-4.png" alt="">
+              </figure>
+              <div class="button-container">
+                <a href="https://github.com/Mayowa-Ojo/Morning-Tea" target="_blank" rel="noreferrer noopener" class="button is-outlined is-danger">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  View Repository
+                </a>
+                <a href="" class="button is-outlined is-danger">
+                  <span class="icon"><i class="fas fa-link"></i></span>
+                  Live Preview
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
   </section>
 
-  <script type="text/javascript" src="./src/assets/js/index.js"></script>
+  <!-- Section - Contact -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h1 class="title is-1">Contact</h1>
+      <div class="notification">
+        <h2 class="is-4">
+          I'm available for remote and on-site opportunities. Let's work together
+          <i class="fas fa-handshake"></i>
+        </h2>
+        <!-- <p>Find me on:</p> -->
+        <div class="contact-links is-flex-mobile">
+          <span class="icon"><a href="https://github.com/mayowa-ojo"><i class="fab fa-github"></i></a></span>
+          <span class="icon"><a href="https://twitter.com/unorthodev"><i class="fab fa-twitter"></i></a></span>
+          <span class="icon"><a href="https://www.linkedin.com/in/mayowa-ojo-39394b137/"><i class="fab fa-linkedin"></i></a></span>
+          <span class="icon"> <a href="mailto:mayowaojo.e@gmail.com"><i class="fas fa-envelope"></i></a></span>
+          <span class="icon"><a href="https://medium.com/@mayowaojo.e"><i class="fab fa-medium"></i></a></span>
+          <span class="icon"><a href="tel:+2348125086334"><i class="fas fa-phone-square"></i></a></span>
+        </div>
+
+        <div class="back-to-top">
+          <span class="icon"><a href="#hero"><i class="fas fa-arrow-alt-circle-up fa-2x"></i></a></span>
+          <span class="tool-tip">Back to top</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>Created by: <strong>Mayowa Ojo</strong> © 2019</p>
+      <p>Source code available <a href="#">here</a><span class="icon"><i class="fas fa-code"></i></span></p>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap');
+
+/* variables */
+$primary-color: #333;
+$secondary-color: #fff;
+$off-white: #f1f2f6;
+$overlay: rgba(0,0,0,0.7);
+$shadow: -1px 2px 6px #444;
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: 'Inconsolata', monospace;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  // color: $primary-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// ******************************
+
+// hero
+section.hero.is-success {
+  background-color: #332231;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%2344351b' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%234d2155'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  & i.fas {
+    margin-left: 0.5em;
+    transition: 0.3s;
+  }
+
+  a.button {
+    transition: 0.3s;
+  }
+}
+
+// Nav bar
+nav.navbar.is-transparent {
+  background: #332231;
+
+  .navbar-menu .navbar-dropdown {
+    .navbar-item {
+      &:hover {
+        background: #ffdd57 !important;
+      }
+    }
+  }
+}
+
+.navbar-item,
+.navbar-link {
+  color: #ffdd57 !important;
+  &:hover {
+    color: white !important;
+  }
+}
+
+.navbar-link:not(.is-arrowless)::after {
+  border-color: white !important;
+}
+
+.navbar-dropdown .navbar-item {
+  color: #333 !important;
+}
+
+// heading
+.hero h1.title.is-1 {
+  text-decoration: none;
+  text-transform: uppercase;
+  & span {
+    color: #ffdd57;
+  }
+}
+
+// flex items
+section.section.about .columns,
+section.section.projects .columns,
+section.section.stack .columns {
+  justify-content: space-evenly;
+}
+
+div.column.is-2 .notification p {
+  margin-top: 0.8em;
+}
+
+div.columns {
+  margin: 2em auto;
+}
+
+.notification {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// headings
+h1.title {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 3rem !important;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 1em;
+}
+
+// About Section
+section.about figure.image {
+  border: 2px solid #f5f5f5;
+}
+// Projects Section
+section.projects .container {
+  .card {
+    .button-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #ffdd57;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.5s;
+
+      &:hover {
+        background: #f5f5f5;
+
+        a {
+          opacity: 1;
+          &:first-child {
+            transform: translateY(3.5em);
+          }
+          &:nth-child(2) {
+            transform: translateY(-3.5em);
+          }
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+    .button-container a {
+      width: 50%;
+      border-radius: 0;
+      opacity: 0;
+      transition: 0.5s;
+      color: steelblue;
+      font-size: 0.8rem;
+      padding: 1.3em;
+      span {
+        margin-right: 0.5em;
+      }
+    }
+  }
+}
+
+// Contact Section
+section.contact .notification {
+  width: 50%;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+
+  .contact-links {
+    margin-top: 2em;
+
+    span {
+      margin: 0 1em;
+      cursor: pointer;
+      &:hover {
+        color: #ffdd57;
+      }
+    }
+  }
+
+  .back-to-top {
+    margin-top: 1.5em;
+    cursor: pointer;
+    &:hover {
+      color: #ffdd57;
+
+      span:nth-child(2) {
+        display: inline-block;
+      }
+    }
+
+    span:nth-child(2) {
+      font-size: 0.7rem;
+      display: inline-block;
+      background: #555;
+      color: #ffdd57;
+      padding: 0.4em 0.8em;
+      position: absolute;
+      z-index: 1;
+      display: none;
+      transform: translateX(15px);
+      &::after {
+        content: '';
+        position: absolute;
+        left: -0.4em;
+        top: 30%;
+        width: 8px;
+        height: 10px;
+        background: #555;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+// Footer
+footer.footer {
+  background: #ffdd57;
+
+  p:nth-child(2) span {
+    margin-left: .5em;
+    position: relative;
+    top: 2px;
+  }
+}
+
+// Scrollbar Styles
+body::-webkit-scrollbar {
+  width: 6px;
+  background: #ffdd57;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #332231;
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background: #ffdd57;
+}
+
+
+
+// ******************************
+
+// Media queries
+@media (max-width: 768px) {
+  section.contact .notification {
+    width: 95%;
+
+    h2.is-4 {
+      text-align: center;
+      font-size: 80%;
+    }
+
+    .contact-links {
+      span {
+        margin: 0 0.5em;
+      }
+    }
+  }
+
+  .title.is-1 {
+    font-size: 2rem !important;
+  }
+  .subtitle.is-3 {
+    font-size: 1rem !important;
+  }
+}
